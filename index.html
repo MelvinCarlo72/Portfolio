@@ -95,10 +95,6 @@
   .role-tag { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--gray-2); margin: 10px 0 0; }
   .hero p.lead { font-size: 15px; max-width: 46ch; margin: 10px 0 22px; line-height: 1.65; }
   .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-  .contact-row { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--gray-2); }
-  .contact-row a { color: var(--gray-2); text-decoration: underline; text-underline-offset: 3px; transition: color .15s ease; }
-  .contact-row a:hover { color: var(--ink); }
-  .contact-row .sep { margin: 0 10px; }
 
   .illustration { display: flex; justify-content: center; }
   .avatar-frame {
@@ -121,7 +117,7 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .avatar-frame, .avatar-img { animation: none; }
-    .btn, .navlinks a::after, .quicklinks a, .quicklinks a span, .win, .chip, .cert, footer .flinks a, .contact-row a { transition: none; }
+    .btn, .navlinks a::after, .quicklinks a, .quicklinks a span, .win, .chip, .cert, footer .flinks a { transition: none; }
   }
 
   .quicklinks { border-bottom: var(--border); }
@@ -249,18 +245,11 @@
   .tpoint .dot { width: 15px; height: 15px; border-radius: 50%; background: var(--ink); border: 3px solid var(--paper); box-shadow: 0 0 0 3px var(--ink); }
   .edu-note { font-size: 13px; color: var(--gray-2); line-height: 1.65; max-width: 60ch; }
 
-  .contact-box {
-    border: var(--border);
-    box-shadow: var(--shadow);
-    background: var(--panel);
-    padding: 34px;
-    display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
-  }
-  .contact-box h2 { font-size: 24px; }
-  .contact-box .links { display: flex; gap: 10px; flex-wrap: wrap; }
-
-  footer { padding: 22px 0; }
-  footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+  footer { padding: 0; border-top: var(--border); }
+  .footer-cta { padding: 60px 0 44px; text-align: center; }
+  .footer-cta h2 { font-size: clamp(26px, 4vw, 38px); margin-bottom: 20px; }
+  .footer-cta .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .footer-bottom { border-top: 2px dashed var(--gray); padding: 18px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; }
   footer .flinks { display: flex; gap: 10px; flex-wrap: wrap; }
   footer .flinks a { border: 2px solid var(--ink); padding: 5px 10px; text-decoration: none; font-weight: 600; transition: background .15s ease, color .15s ease, transform .15s ease; }
   footer .flinks a:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
@@ -301,13 +290,6 @@
       <div class="hero-actions">
         <a class="btn dark" href="mailto:villanuevamelvincarloe@gmail.com">Say hello ↗</a>
         <a class="btn" href="https://github.com/MelvinCarlo72" target="_blank" rel="noopener">View GitHub ↗</a>
-      </div>
-      <div class="contact-row">
-        <a href="mailto:villanuevamelvincarloe@gmail.com">villanuevamelvincarloe@gmail.com</a>
-        <span class="sep">·</span>
-        <a href="tel:+639764515011">+63 976 451 5011</a>
-        <span class="sep">·</span>
-        <a href="https://github.com/MelvinCarlo72" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
     <div class="illustration">
@@ -497,26 +479,23 @@
   </div>
 </section>
 
-<section class="block">
+<footer>
   <div class="wrap">
-    <div class="contact-box">
+    <div class="footer-cta">
       <h2>Let's talk.</h2>
       <div class="links">
         <a class="btn dark" href="mailto:villanuevamelvincarloe@gmail.com">villanuevamelvincarloe@gmail.com</a>
         <a class="btn dark" href="tel:+639764515011">+63 976 451 5011</a>
       </div>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 Melvin Carlo Villanueva.</span>
-    <div class="flinks">
-      <a href="https://github.com/MelvinCarlo72" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/melvin-carlo-villanueva-021789345/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:villanuevamelvincarloe@gmail.com">Email</a>
-      <a href="tel:+639764515011">Phone</a>
+    <div class="footer-bottom">
+      <span>© 2026 Melvin Carlo Villanueva.</span>
+      <div class="flinks">
+        <a href="https://github.com/MelvinCarlo72" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/melvin-carlo-villanueva-021789345/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:villanuevamelvincarloe@gmail.com">Email</a>
+        <a href="tel:+639764515011">Phone</a>
+      </div>
     </div>
   </div>
 </footer>
