@@ -50,15 +50,13 @@
   .mono { letter-spacing: .02em; font-variant-numeric: tabular-nums; }
 
   nav {
-    background: var(--gray);
+    background: var(--panel);
     border-bottom: var(--border);
     padding: 14px 0;
     position: sticky; top: 0; z-index: 10;
   }
   nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  .logo { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; }
-  .logo .box { width: 26px; height: 26px; border: var(--border); background: var(--ink); position: relative; flex-shrink: 0; }
-  .logo .box::after { content: ""; position: absolute; inset: 5px; background: var(--panel); }
+  .logo { font-weight: 700; font-size: 15px; }
   .navlinks { display: flex; gap: 22px; font-size: 14px; font-weight: 500; flex-wrap: wrap; }
   .navlinks a { text-decoration: none; position: relative; transition: color .15s ease; }
   .navlinks a::after {
@@ -268,7 +266,7 @@
 
 <nav>
   <div class="wrap">
-    <div class="logo"><span class="box"></span> Melvin Carlo</div>
+    <div class="logo">Melvin Carlo</div>
     <div class="navlinks">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
