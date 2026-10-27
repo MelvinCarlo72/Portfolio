@@ -240,7 +240,7 @@
     <div class="cell"><dt>Graduating</dt><dd>2027, BS Computer Science</dd></div>
     <div class="cell"><dt>Based in</dt><dd>Central Luzon, Philippines</dd></div>
     <div class="cell"><dt>Open to</dt><dd>Data engineering opportunities, Hong Kong SAR, hybrid or on-site</dd></div>
-    <div class="cell"><dt>Built so far</dt><dd>2 projects, 4 Cisco certifications</dd></div>
+    <div class="cell"><dt>Built so far</dt><dd>5 projects, 4 Cisco certifications</dd></div>
   </dl>
 </div>
 
@@ -249,7 +249,7 @@
 <section class="block" id="projects">
   <div class="wrap reveal">
     <h2>Projects</h2>
-    <p class="sub">Two projects, built end to end.</p>
+    <p class="sub">Five projects, built end to end.</p>
     <div class="cards">
       <article class="win">
         <div class="win-bar">
@@ -309,6 +309,79 @@
           <a class="btn dark" href="https://github.com/MelvinCarlo72/Flow" target="_blank" rel="noopener">View repo ↗</a>
         </div>
       </article>
+
+      <article class="win">
+        <div class="win-bar">
+          <div class="win-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="win-name mono">sumo-dashboard/main.py</span>
+        </div>
+        <div class="win-art">
+          <svg aria-hidden="true" viewBox="0 0 120 90" width="100" height="80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="38" y="8" width="44" height="74" rx="10" fill="var(--panel)" stroke="var(--ink)" stroke-width="4"/>
+            <circle cx="60" cy="27" r="9" fill="var(--ink)"/>
+            <circle cx="60" cy="45" r="9" fill="var(--panel)" stroke="var(--ink)" stroke-width="3.5"/>
+            <circle cx="60" cy="63" r="9" fill="var(--panel)" stroke="var(--ink)" stroke-width="3.5"/>
+          </svg>
+        </div>
+        <div class="win-body">
+          <h3>SUMO Traffic Dashboard</h3>
+          <p>Thesis project: a reinforcement-learning controller that optimizes real traffic-light timing inside a live SUMO simulation.</p>
+          <ul class="points">
+            <li>SAC (Soft Actor-Critic) agent controls signal phases over a live TraCI connection to SUMO</li>
+            <li>FastAPI + WebSocket backend streams simulation state to a browser dashboard</li>
+            <li>Modeled on two real San Fernando, Pampanga intersections: SACOP and Del Rosario</li>
+          </ul>
+          <div class="tagrow"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SUMO / TraCI</span><span class="tag">Reinforcement Learning</span></div>
+          <a class="btn dark" href="https://github.com/MelvinCarlo72/SUMO-Traffic-Dashboard" target="_blank" rel="noopener">View repo ↗</a>
+        </div>
+      </article>
+
+      <article class="win">
+        <div class="win-bar">
+          <div class="win-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="win-name mono">safespeak/index.html</span>
+        </div>
+        <div class="win-art">
+          <svg aria-hidden="true" viewBox="0 0 120 90" width="100" height="80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 8 L94 20 V46 C94 66 80 78 60 84 C40 78 26 66 26 46 V20 Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M44 46 L55 58 L80 32" stroke="var(--ink)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="win-body">
+          <h3>SafeSpeak</h3>
+          <p>A client-side message safety checker built for AUF CCS: type a message and get an AI-assisted read on potentially harmful language before you send it.</p>
+          <ul class="points">
+            <li>Runs TensorFlow.js's toxicity model entirely in the browser — no backend involved</li>
+            <li>Live 500-character counter, plus one-click positive / neutral / toxic examples</li>
+          </ul>
+          <div class="tagrow"><span class="tag">HTML / CSS</span><span class="tag">TensorFlow.js</span></div>
+          <a class="btn dark" href="https://github.com/MelvinCarlo72/SafeSpeak" target="_blank" rel="noopener">View repo ↗</a>
+        </div>
+      </article>
+
+      <article class="win">
+        <div class="win-bar">
+          <div class="win-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="win-name mono">gesture-snake/sketch.js</span>
+        </div>
+        <div class="win-art">
+          <svg aria-hidden="true" viewBox="0 0 160 90" width="140" height="80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 70 H48 V46 H80 V22 H104" stroke="var(--ink)" stroke-width="10" fill="none" stroke-linecap="square" stroke-linejoin="round"/>
+            <rect x="120" y="14" width="16" height="16" fill="var(--panel)" stroke="var(--ink)" stroke-width="3.5"/>
+          </svg>
+        </div>
+        <div class="win-body">
+          <h3>GestureSnake</h3>
+          <p>Classic Snake, steered entirely by webcam hand gestures instead of a keyboard.</p>
+          <ul class="points">
+            <li>A Teachable Machine image model, run via ml5.js/TensorFlow.js, classifies hand gestures from the webcam in real time</li>
+            <li>Predicted gestures map directly to the snake's direction</li>
+            <li>Game loop, grid and rendering built with p5.js</li>
+          </ul>
+          <div class="tagrow"><span class="tag">p5.js</span><span class="tag">ml5.js</span><span class="tag">Teachable Machine</span></div>
+          <a class="btn dark" href="https://github.com/MelvinCarlo72/GestureSnake" target="_blank" rel="noopener">View repo ↗</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -321,13 +394,19 @@
     <div class="skill-cat">
       <h3>Languages</h3>
       <div class="chip-row">
-        <span class="chip">Python</span><span class="chip">Java</span><span class="chip used">JavaScript</span><span class="chip">C++</span>
+        <span class="chip used">Python</span><span class="chip">Java</span><span class="chip used">JavaScript</span><span class="chip">C++</span>
       </div>
     </div>
     <div class="skill-cat">
       <h3>Web &amp; backend</h3>
       <div class="chip-row">
-        <span class="chip used">HTML / CSS</span><span class="chip used">Node.js</span><span class="chip used">Express</span><span class="chip used">REST APIs</span>
+        <span class="chip used">HTML / CSS</span><span class="chip used">Node.js</span><span class="chip used">Express</span><span class="chip used">REST APIs</span><span class="chip used">FastAPI</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>ML &amp; simulation</h3>
+      <div class="chip-row">
+        <span class="chip used">Reinforcement Learning</span><span class="chip used">TensorFlow.js</span><span class="chip used">SUMO / TraCI</span>
       </div>
     </div>
     <div class="skill-cat">
