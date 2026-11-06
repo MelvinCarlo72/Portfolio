@@ -122,6 +122,7 @@
   .points { margin: 0 0 14px; padding-left: 18px; font-size: 13px; line-height: 1.6; }
   .points li { margin-bottom: 4px; }
   .tagrow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
   .tag { font-size: 11px; font-weight: 600; border: 2px solid var(--ink); padding: 3px 8px; }
 
   .skill-cat { margin-bottom: 26px; }
@@ -149,19 +150,6 @@
   .cert-body h3 { font-size: 14px; margin: 0 0 4px; font-weight: 700; }
   .cert-body span { font-size: 12px; color: var(--gray-2); }
 
-  .timeline-wrap { margin: 46px 0 34px; }
-  .timeline { position: relative; display: flex; justify-content: space-between; gap: 10px; padding: 0 6px; }
-  .timeline::before { content: ""; position: absolute; left: 0; right: 40px; top: 50%; height: 3px; background: var(--ink); transform: translateY(-50%); }
-  .timeline::after { content: ""; position: absolute; right: 0; width: 40px; top: 50%; height: 3px; background-image: repeating-linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 16px); transform: translateY(-50%); }
-  .tpoint { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; flex: 1; }
-  .tpoint .top, .tpoint .bottom { min-height: 34px; font-size: 12px; font-weight: 600; text-align: center; line-height: 1.4; }
-  .tpoint .top { margin-bottom: 10px; }
-  .tpoint .bottom { margin-top: 10px; }
-  .tpoint .yr { display: block; font-family: 'Archivo Black', sans-serif; font-size: 16px; font-weight: 400; }
-  .tpoint .dot { width: 15px; height: 15px; border-radius: 50%; background: var(--ink); border: 3px solid var(--paper); box-shadow: 0 0 0 3px var(--ink); }
-  .tpoint.now .dot { animation: pulse 2.2s ease-out infinite; }
-  @keyframes pulse { 0% { box-shadow: 0 0 0 3px var(--ink), 0 0 0 3px color-mix(in srgb, var(--ink) 40%, transparent); } 100% { box-shadow: 0 0 0 3px var(--ink), 0 0 0 15px color-mix(in srgb, var(--ink) 0%, transparent); } }
-  .edu-note { font-size: 13px; color: var(--gray-2); line-height: 1.65; max-width: 60ch; margin: 0; }
 
   footer { border-top: var(--border); }
   .footer-cta { padding: 60px 0 44px; text-align: center; }
@@ -182,17 +170,6 @@
     .glance .cell:nth-child(-n+2) { border-bottom: var(--border); }
     .glance .cell:nth-child(3) { padding-left: 0; }
   }
-  @media (max-width: 700px) {
-    .timeline { flex-direction: column; gap: 0; padding: 0 0 0 4px; }
-    .timeline::before { left: 10px; right: auto; top: 8px; bottom: 8px; width: 3px; height: auto; transform: none; }
-    .timeline::after { display: none; }
-    .tpoint { flex-direction: row; align-items: flex-start; gap: 18px; padding-bottom: 22px; flex: none; }
-    .tpoint:last-child { padding-bottom: 0; }
-    .tpoint .dot { order: 0; margin-top: 2px; flex-shrink: 0; }
-    .tpoint .top, .tpoint .bottom { order: 1; min-height: 0; margin: 0; text-align: left; font-size: 13px; }
-    .tpoint .top:empty, .tpoint .bottom:empty { display: none; }
-    .tpoint .yr { font-size: 15px; }
-  }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .js .reveal { opacity: 1; transform: none; }
@@ -209,7 +186,6 @@
       <a href="#projects">Projects</a>
       <a href="#skills">Tech stack</a>
       <a href="#certifications">Certifications</a>
-      <a href="#journey">Journey</a>
       <a href="https://github.com/MelvinCarlo72" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </div>
@@ -238,7 +214,7 @@
     <div class="cell"><dt>Graduating</dt><dd>2027, BS Computer Science</dd></div>
     <div class="cell"><dt>Based in</dt><dd>Central Luzon, Philippines</dd></div>
     <div class="cell"><dt>Open to</dt><dd>Data engineering opportunities, Hong Kong SAR, hybrid or on-site</dd></div>
-    <div class="cell"><dt>Built so far</dt><dd>5 projects, 4 Cisco certifications</dd></div>
+    <div class="cell"><dt>Built so far</dt><dd>6 projects, 4 Cisco certifications</dd></div>
   </dl>
 </div>
 
@@ -247,7 +223,7 @@
 <section class="block" id="projects">
   <div class="wrap reveal">
     <h2>Projects</h2>
-    <p class="sub">Five projects, built end to end.</p>
+    <p class="sub">Six projects, built end to end.</p>
     <div class="cards">
       <article class="win">
         <div class="win-bar">
@@ -380,6 +356,35 @@
           <a class="btn dark" href="https://github.com/MelvinCarlo72/GestureSnake" target="_blank" rel="noopener">View repo ↗</a>
         </div>
       </article>
+
+      <article class="win">
+        <div class="win-bar">
+          <div class="win-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="win-name mono">seed-insights/index.html</span>
+        </div>
+        <div class="win-art">
+          <svg aria-hidden="true" viewBox="0 0 120 90" width="100" height="80" xmlns="http://www.w3.org/2000/svg">
+            <line x1="22" y1="78" x2="98" y2="78" stroke="var(--ink)" stroke-width="4"/>
+            <path d="M60 78 V38" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M60 50 C60 32 44 24 28 26 C28 44 42 54 60 50 Z" fill="var(--ink)"/>
+            <path d="M60 40 C60 22 76 14 92 16 C92 34 78 44 60 40 Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="win-body">
+          <h3>SeedInsights</h3>
+          <p>A student-project prototype that turns parent feedback for a child development center into sentiment and recurring themes.</p>
+          <ul class="points">
+            <li>Public QR feedback form with no account needed, plus a staff dashboard behind authentication</li>
+            <li>Runs sentiment analysis in the browser with Transformers.js and groups comments by transparent keyword-based topics</li>
+            <li>Supabase for data and staff auth, deployed on Vercel</li>
+          </ul>
+          <div class="tagrow"><span class="tag">JavaScript</span><span class="tag">Supabase</span><span class="tag">Transformers.js</span></div>
+          <div class="btn-row">
+            <a class="btn dark" href="https://seed-insights-gold.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="btn" href="https://github.com/MelvinCarlo72/seed-insights" target="_blank" rel="noopener">View repo ↗</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -398,19 +403,19 @@
     <div class="skill-cat">
       <h3>Web &amp; backend</h3>
       <div class="chip-row">
-        <span class="chip used">HTML / CSS</span><span class="chip used">Node.js</span><span class="chip used">Express</span><span class="chip used">REST APIs</span><span class="chip used">FastAPI</span>
+        <span class="chip used">HTML / CSS</span><span class="chip used">Node.js</span><span class="chip used">Express</span><span class="chip used">REST APIs</span><span class="chip used">FastAPI</span><span class="chip used">Supabase</span>
       </div>
     </div>
     <div class="skill-cat">
       <h3>ML &amp; simulation</h3>
       <div class="chip-row">
-        <span class="chip used">Reinforcement Learning</span><span class="chip used">TensorFlow.js</span><span class="chip used">SUMO / TraCI</span>
+        <span class="chip used">Reinforcement Learning</span><span class="chip used">TensorFlow.js</span><span class="chip used">Transformers.js</span><span class="chip used">SUMO / TraCI</span>
       </div>
     </div>
     <div class="skill-cat">
       <h3>Data</h3>
       <div class="chip-row">
-        <span class="chip">Data Engineering</span><span class="chip used">Data Analysis</span>
+        <span class="chip">Data Engineering</span><span class="chip used">Data Analysis</span><span class="chip used">SQL</span>
       </div>
     </div>
     <div class="skill-cat">
@@ -421,7 +426,7 @@
     </div>
     <div class="skill-cat">
       <h3>Tools</h3>
-      <div class="chip-row"><span class="chip used">Git / GitHub</span></div>
+      <div class="chip-row"><span class="chip used">Git / GitHub</span><span class="chip used">Vercel</span></div>
     </div>
   </div>
 </section>
@@ -448,23 +453,6 @@
         <div class="cert-body"><h3>Discovering Entrepreneurship</h3><span>Cisco · Dec 2024</span></div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="block" id="journey">
-  <div class="wrap reveal">
-    <h2>Journey</h2>
-    <p class="sub">How I got here, and where it's heading.</p>
-    <div class="timeline-wrap">
-      <div class="timeline">
-        <div class="tpoint"><div class="top"></div><span class="dot"></span><div class="bottom"><span class="yr">2022</span>Started BS Computer Science</div></div>
-        <div class="tpoint"><div class="top"><span class="yr">2024</span>First Cisco certificate</div><span class="dot"></span><div class="bottom"></div></div>
-        <div class="tpoint"><div class="top"></div><span class="dot"></span><div class="bottom"><span class="yr">2026</span>Shipped Analytica and Flow</div></div>
-        <div class="tpoint now"><div class="top"><span class="yr">Now</span>Fourth year</div><span class="dot"></span><div class="bottom"></div></div>
-        <div class="tpoint"><div class="top"></div><span class="dot"></span><div class="bottom"><span class="yr">2027</span>Expected graduation</div></div>
-      </div>
-    </div>
-    <p class="edu-note">BS Computer Science, Angeles University Foundation, San Fernando, Central Luzon.</p>
   </div>
 </section>
 
